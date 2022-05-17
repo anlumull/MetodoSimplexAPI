@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Metodo Simplex</title>
 </head>
 <body>
-    Proyecto Investigacion de operaciones
+    <div class="container-fluid" style="text-align:center;">
+        <h1>Proyecto de investigacion de operaciones</h1>
+    </div>
+    <div class="container-fluid" style="text-align:center;">
+        <h2>Aplicacion para realizacion de metodo simplex en programacion lineal</h2>
+    </div>
+    <br>
+    <div class="container">
+        <form id="fomulario1" action="index.html" method="get" style="text-align:center;">
+         <input type="hidden" name="1" value="es">
+         <p>
+             "¿Cuantas variables tiene el problema? "
+             <input id="v" type="text" name="v" size="5" required>
+         </p>
+         <p>
+            "¿Cuantas restricciones tiene? "
+            <input id="r" type="text" name="r" size="5" required>
+         </p>
+         <p>
+             <input class="button gray" type="submit" name="Submit" onclick="enviar(this.form)" value="Continuar">
+         </p>
+        </form>
+    </div>
 </body>
 </html>
